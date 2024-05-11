@@ -1,0 +1,34 @@
+/* CSS for FileStructureViewer component */
+.file-structure-viewer {
+    /* font-family: Menlo, Consolas, monospace; */
+    background-color: #141313;
+    color: white;
+    padding: 0;
+    border: 1px solid #141313;
+    width: 15%;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 1rem;
+  }
+  
+  li {
+    cursor: pointer;
+    padding: 0.2rem 0;
+  }
+  
+  .folder {
+    font-weight: bold;
+  }
+  
+  /* Hide nested lists by default */
+  ul ul {
+    display: none;
+  }
+  
+  /* Show nested lists when their parent li is clicked */
+  li.folder.expanded > ul {
+    display: block;
+  }
+  
