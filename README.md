@@ -27,8 +27,8 @@ Make sure you have the following installed on your machine:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/playground-app.git
-   cd playground-app
+   git clone https://github.com/ayyanpasha/codedamn-frontend.git
+   cd codedamn-frontend
 
 2. **Install dependencies:**
    ```bash
