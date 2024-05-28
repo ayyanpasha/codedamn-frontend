@@ -35,6 +35,7 @@ Make sure you have the following installed on your machine:
    npm install
 
 3. **Set up environment variables:**
+    ```bash
     REACT_APP_API_URL=http://<BACKEND_API_URL>:2900
     REACT_APP_WS_URL=<BACKEND_API_URL>
 
