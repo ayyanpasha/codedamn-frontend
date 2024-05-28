@@ -62,7 +62,7 @@ const XtermComponent: React.FC<XTermProps> = (props) => {
   console.log(props.hidden)
 
   return (
-      <div ref={terminalRef}  style={{ height: '100%', overflow: 'auto' , flex: 1, width: '100%', display: props.hidden?'none':'block'}}/>
+      <div ref={terminalRef}  style={{ backgroundColor:'black',height: '100%', overflow: 'auto' , flex: 1, width: '100%', display: props.hidden?'none':'block'}}/>
     
   );
 };

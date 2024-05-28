@@ -7,6 +7,11 @@ interface profectInterface {
 
 const ProjectsPage: React.FC = () => {
   const navigate = useNavigate();
+  const [isDisabled, setIsDisabled] = useState(false);
+
+  const handleToggle = () => {
+    setIsDisabled(!isDisabled);
+  };
 
   // State to manage list of projects
   const [projects, setProjects] = useState<profectInterface[]>([]);
@@ -39,6 +44,7 @@ const ProjectsPage: React.FC = () => {
 
   // Function to handle adding new project
   const handleAddProject = async () => {
+    handleToggle();
     try {
       const response = await fetch(
         `${process.env.REACT_APP_API_URL}/api/container/new`,
@@ -61,6 +67,8 @@ const ProjectsPage: React.FC = () => {
     } catch (error) {
       console.error("Error adding project:", error);
       // Handle error
+    } finally{
+      handleToggle();
     }
   };
 
@@ -72,10 +80,10 @@ const ProjectsPage: React.FC = () => {
   return (
     <div className="container mt-5">
       <h2>Add New Project</h2>
-      <button className="btn btn-primary mb-3" onClick={handleAddProject}>
+      <button className="btn btn-primary mb-3" onClick={handleAddProject} disabled={isDisabled}>
         Add Project
       </button>
-
+      {!isDisabled?``:`   Loading....`}
       <h2>List of Projects</h2>
       <ul className="list-group">
         {projects.map((project, index) => (

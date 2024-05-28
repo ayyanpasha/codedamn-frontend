@@ -24,6 +24,7 @@ const FileStructureViewer: React.FC<MyComponentProps> = (props) => {
     ws.onmessage = (event) => {
       const receivedData = JSON.parse(event.data);
       console.log(receivedData.toString());
+      console.log(JSON.stringify(receivedData));
       setFileStructure(receivedData);
     };
 

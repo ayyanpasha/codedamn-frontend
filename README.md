@@ -1,46 +1,76 @@
-# Getting Started with Create React App
+# Playground App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Playground App! This project is a frontend application built with React, allowing users to sign up, log in, and create virtual Ubuntu containers. Within these containers, users can access a terminal, view the file structure, use a code editor, and preview their API, similar to an integrated development environment like VS Code.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **User Authentication**: Sign up and log in with secure authentication.
+- **Playground Creation**: Create and manage virtual Ubuntu containers.
+- **Integrated Terminal**: Access a terminal to run commands in your container.
+- **File Explorer**: View and manage files in the container.
+- **Code Editor**: Write and edit code with syntax highlighting and other editor features.
+- **API Preview**: See the output of your API in real-time.
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+These instructions will help you set up and run the project on your local machine for development and testing purposes.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+Make sure you have the following installed on your machine:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (>=14.x.x)
+- npm (>=6.x.x) or yarn (>=1.x.x)
+- Docker (for running Ubuntu containers)
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/playground-app.git
+   cd playground-app
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install dependencies:**
+   ```bash
+   npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Set up environment variables:**
+    REACT_APP_API_URL=http://<BACKEND_API_URL>:2900
+    REACT_APP_WS_URL=<BACKEND_API_URL>
 
-### `npm run eject`
+4. **Start the development server:**
+    ```bash
+    npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    ## Running the Application
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. **Sign Up / Log In**: Open the application in your browser. Sign up for a new account or log in with your existing credentials.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+2. **Create a Playground**: After logging in, you will be able to create a new playground. This will spin up a virtual Ubuntu container for you.
 
-## Learn More
+3. **Use the Playground**: Within the playground, you can:
+   - Access the terminal to run commands.
+   - View and manage the file structure on the left side.
+   - Write and edit code in the central code editor.
+   - Preview your API output on the right side.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Built With
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces.
+- [xterm.js](https://xtermjs.org/) - A terminal for the web.
+- [Monaco Editor](https://microsoft.github.io/monaco-editor/) - The code editor that powers VS Code.
+- [Docker](https://www.docker.com/) - To create and manage virtual Ubuntu containers.
+
+## Contributing
+
+Contributions are welcome! Please read the [CONTRIBUTING.md](CONTRIBUTING.md) for details on the code of conduct and the process for submitting pull requests.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+## Acknowledgments
+
+- Inspired by Visual Studio Code.
+- Thanks to the open-source community for the great tools and libraries.

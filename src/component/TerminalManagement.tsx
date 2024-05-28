@@ -26,6 +26,7 @@ const TerminalManagement: React.FC<TerminalInterface> = (props) => {
       </button>
       {props.terminal.map((terminalId) => (
         <div
+        key= {terminalId}
           style={{
             border: "1px solid white",
             display: "flex",
