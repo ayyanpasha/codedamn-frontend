@@ -60,7 +60,7 @@ Make sure you have the following installed on your machine:
 - [React](https://reactjs.org/) - A JavaScript library for building user interfaces.
 - [xterm.js](https://xtermjs.org/) - A terminal for the web.
 - [Monaco Editor](https://microsoft.github.io/monaco-editor/) - The code editor that powers VS Code.
-- [Docker](https://www.docker.com/) - To create and manage virtual Ubuntu containers.
+- [TypeScript](https://www.typescriptlang.org/) - A typed superset of JavaScript that compiles to plain JavaScript.
 
 ## Contributing
 
