@@ -1,5 +1,9 @@
 # Playground App
 
+This frontend for the playground app, following are supporting git repositories:
+- Express API: https://github.com/ayyanpasha/playbook_express_api.git
+- Dockerized Image to communicate with: https://github.com/ayyanpasha/playbook_docker_container_image.git
+- Dockerized Playground: https://github.com/ayyanpasha/playbook_docker_container_image.git
 Welcome to the Playground App! This project is a frontend application built with React, allowing users to sign up, log in, and create virtual Ubuntu containers. Within these containers, users can access a terminal, view the file structure, use a code editor, and preview their API, similar to an integrated development environment like VS Code.
 
 ## Features
@@ -21,7 +25,6 @@ Make sure you have the following installed on your machine:
 
 - Node.js (>=14.x.x)
 - npm (>=6.x.x) or yarn (>=1.x.x)
-- Docker (for running Ubuntu containers)
 
 ### Installation
 
@@ -62,16 +65,3 @@ Make sure you have the following installed on your machine:
 - [xterm.js](https://xtermjs.org/) - A terminal for the web.
 - [Monaco Editor](https://microsoft.github.io/monaco-editor/) - The code editor that powers VS Code.
 - [TypeScript](https://www.typescriptlang.org/) - A typed superset of JavaScript that compiles to plain JavaScript.
-
-## Contributing
-
-Contributions are welcome! Please read the [CONTRIBUTING.md](CONTRIBUTING.md) for details on the code of conduct and the process for submitting pull requests.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
-## Acknowledgments
-
-- Inspired by Visual Studio Code.
-- Thanks to the open-source community for the great tools and libraries.
