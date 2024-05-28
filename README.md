@@ -42,7 +42,7 @@ Make sure you have the following installed on your machine:
     ```bash
     npm start
 
-    ## Running the Application
+## Running the Application
 
 
 1. **Sign Up / Log In**: Open the application in your browser. Sign up for a new account or log in with your existing credentials.
