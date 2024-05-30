@@ -56,10 +56,11 @@ const ProjectsPage: React.FC = () => {
           }
         }
       );
+      const data = await response.json();
+      console.log(data);
       if (!response.ok) {
         throw new Error("Failed to add project");
       }
-      const data = await response.json();
       console.log(data);
       fetchProjects();
       // Redirect to the home page or any other page after successful project creation
