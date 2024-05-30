@@ -30,7 +30,7 @@ const XtermComponent: React.FC<XTermProps> = (props) => {
       term.current.loadAddon(fitAddon.current);
 
       // Initialize WebSocket connection
-      const socket = new WebSocket(`ws://${process.env.REACT_APP_WS_URL}:3001/${projectId}:1000`);
+      const socket = new WebSocket(`${process.env.REACT_APP_WS_URL}/${projectId}:1000`);
       socketRef.current = socket;
 
       // Attach WebSocket to terminal
