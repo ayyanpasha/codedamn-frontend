@@ -15,7 +15,7 @@ const FileStructureViewer: React.FC<MyComponentProps> = (props) => {
   const { projectId } = useParams();
 
   useEffect(() => {
-    const ws = new WebSocket(`ws://${process.env.REACT_APP_WS_URL}:3001/${projectId}:1001`);
+    const ws = new WebSocket(`${process.env.REACT_APP_WS_URL}/${projectId}:1001`);
 
     ws.onopen = () => {
       console.log('Connected to WebSocket server');

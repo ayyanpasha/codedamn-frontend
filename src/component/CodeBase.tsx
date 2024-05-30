@@ -14,7 +14,7 @@ const CodeBase: React.FC<MyComponentProps> = (props) => {
   const { projectId } = useParams();
   const [ws, setWs] = useState(
     new WebSocket(
-      `ws://${process.env.REACT_APP_WS_URL}:3001/${projectId}:1002?filePath=${currentFile}`
+      `${process.env.REACT_APP_WS_URL}/${projectId}:1002?filePath=${currentFile}`
     )
   );
 
@@ -35,7 +35,7 @@ const CodeBase: React.FC<MyComponentProps> = (props) => {
     } else {
       setLanguage(getLanguage(fileExtension));
     }
-    const socketURL = `ws://${process.env.REACT_APP_WS_URL}:3001/${projectId}:1002?filePath=${currentFile}`;
+    const socketURL = `${process.env.REACT_APP_WS_URL}/${projectId}:1002?filePath=${currentFile}`;
     console.log(socketURL);
     setWs(new WebSocket(socketURL));
   }, [currentFile, projectId]);

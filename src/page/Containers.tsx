@@ -20,7 +20,7 @@ const ProjectsPage: React.FC = () => {
   const fetchProjects = async () => {
     try {
       const response = await fetch(
-        `${process.env.REACT_APP_API_URL}/api/container/list`,
+        `${process.env.REACT_APP_EXPRESS_URL}/api/container/list`,
         {
           method: "GET",
           headers: {
@@ -47,7 +47,7 @@ const ProjectsPage: React.FC = () => {
     handleToggle();
     try {
       const response = await fetch(
-        `${process.env.REACT_APP_API_URL}/api/container/new`,
+        `${process.env.REACT_APP_EXPRESS_URL}/api/container/new`,
         {
           method: "POST",
           headers: {

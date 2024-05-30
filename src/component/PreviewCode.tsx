@@ -52,7 +52,7 @@ const PreviewCode: React.FC = () => {
       <iframe
         ref={iframeRef}
         title="Code Preview"
-        src={`http://${process.env.REACT_APP_WS_URL}:3002/?containerId=${projectId}&port=${url.port}&path=/${url.path}`}
+        src={`${process.env.REACT_APP_WS_URL}/?containerId=${projectId}&port=${url.port}&path=/${url.path}`}
         style={{ flex: 1 }}
       ></iframe>
     </div>
